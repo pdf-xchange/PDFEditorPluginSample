@@ -4,7 +4,7 @@
     <PDFRoot>$(SolutionDir)\..</PDFRoot>
   </PropertyGroup>
   <PropertyGroup>
-	<EditorPath>C:\Program Files\Tracker Software\PDF Editor\PDFXEdit.exe</EditorPath>
+	<EditorPath>$(PXCE_BIN32R_PATH)\PDFXEdit.exe</EditorPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Platform)' == 'x64'">
     <StartAction>Program</StartAction>

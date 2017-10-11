@@ -3,15 +3,16 @@
 
   <PropertyGroup Condition="'$(Platform)' == 'x86'">
     <CommonPlatformName>Win32</CommonPlatformName>
+	  <PDFOutputDir>$(PXCE_BIN32R_PATH)</PDFOutputDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Platform)' == 'x64'">
     <CommonPlatformName>x64</CommonPlatformName>
+	  <PDFOutputDir>$(PXCE_BIN64R_PATH)</PDFOutputDir>
   </PropertyGroup>
   
   <PropertyGroup>
     <PDFRootDir>..\..</PDFRootDir>
-    <PDFOutputDir>C:\Program Files\Tracker Software\PDF Editor</PDFOutputDir>
-    <OutputPath>$(PDFOutputDir)\Plugins.$(CommonPlatformName)\</OutputPath>
+    <OutputPath>$(PDFOutputDir)\Plugins.$(Platform)\</OutputPath>
   </PropertyGroup>
   
 </Project>
