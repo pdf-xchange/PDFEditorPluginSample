@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PDFRoot>$(SolutionDir)\..</PDFRoot>
+  </PropertyGroup>
+  <PropertyGroup>
+	<EditorPath>C:\Program Files\Tracker Software\PDF Editor\PDFXEdit.exe</EditorPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)' == 'x64'">
+    <StartAction>Program</StartAction>
+    <StartProgram>$(EditorPath)</StartProgram>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Platform)' == 'x86'">
+    <StartAction>Program</StartAction>
+    <StartProgram>$(EditorPath)</StartProgram>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableUnmanagedDebugging>true</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <StartProgram>$(EditorPath)</StartProgram>
+  </PropertyGroup>
+</Project>
