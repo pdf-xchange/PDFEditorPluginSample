@@ -19,6 +19,6 @@ For more information see this link:
 2. In the Solution Items\PXEPlugin.props file you should give the correct PDFOutputDir to the End-User Editor's directory.
 3. In the PluginCOMWrapper\PluginCOMWrapper.csproj.user change the EditorPath to the End-User Editor's exe file path.
 4. Unload and Reload the PluginCOMWrapper project to update the project.
-5. Build the PluginCOMWrapper project.
+5. Build the PluginCOMWrapper project. Note that you should choose the x86 or x64 version not the AnyCPU option.
 6. If everything is successful, the PDFXChange Editor should launch.
 7. Press Ctrl+K (Preferences) and check the Plugins tab to see whether your plugin is there.
