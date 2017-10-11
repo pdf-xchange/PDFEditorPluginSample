@@ -11,7 +11,7 @@ The wrapper itself is crutial for the .Net and C++ communication.
 The **PluginSample** is the plugin itself.
 The most important methods are Setup (where are you getting the IPXV_Inst) and Unload (where you should clear all of the objects used).
 For more information see this link:
-[link](http://sdkhelp.tracker-software.com/view/PXV:IPXV_Plugin)
+[IPXV_Plugin](http://sdkhelp.tracker-software.com/view/PXV:IPXV_Plugin)
 
 ## To start, you will have to do these steps:
 0. If needed install the UnmanagedExports by Robert Giesecke nuget packet for the Solution.
