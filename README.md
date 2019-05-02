@@ -22,3 +22,5 @@ For more information see this link:
 5. Build the PluginCOMWrapper project. Note that you should choose the x86 or x64 version not the AnyCPU option.
 6. If everything is successful, the PDFXChange Editor should launch.
 7. Press Ctrl+K (Preferences) and check the Plugins tab to see whether your plugin is there.
+
+**Note:** The pvp file won't be added to the End-User Editor if it is in the Program Files folder - this folder requires advanced privileges thus it would be better to install Editor into some other folder (for example current User folder) for testing.
