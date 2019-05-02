@@ -14,7 +14,7 @@ For more information see this link:
 [IPXV_Plugin](http://sdkhelp.tracker-software.com/view/PXV:IPXV_Plugin)
 
 ## To start, you will have to do these steps:
-0. Install the Editor SDK and if needed the UnmanagedExports by Robert Giesecke nuget packet for the Solution.
+0. Install the Editor SDK and if needed the UnmanagedExports by Robert Giesecke nuget packet for the Solution. And also turn on the .Net Framework 3.5 in Control Panel/ Programs And Features/ Turn Windows Features on or off.
 1. Add a refference to the PDFXEditCore.xXX.dll to both the PluginCOMWrapper and PluginSample project.
 2. In the Solution Items\PXEPlugin.props file you should give the correct PDFOutputDir to the End-User Editor's directory.
 3. In the PluginCOMWrapper\PluginCOMWrapper.csproj.user change the EditorPath to the End-User Editor's exe file path.
