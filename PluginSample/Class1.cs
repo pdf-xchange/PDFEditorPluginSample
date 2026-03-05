@@ -1,16 +1,18 @@
-﻿using System;
+using PDFXEdit;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
-using PDFXEdit;
-using System.IO;
-using System.Reflection;
 
 namespace PluginSample
 {
-    public class MyTestPlugin : IPXV_Plugin
-    {
+	public class MyTestPlugin : IPXV_Plugin
+	{
 		IPXV_Inst m_Inst;
 
 		static Assembly LoadFromSameFolder(object sender, ResolveEventArgs args)
@@ -66,7 +68,7 @@ namespace PluginSample
 			GC.WaitForPendingFinalizers();
 		}
 
-		public void ShowPrefsDlg(uint hWndParent)
+		public void ShowPrefsDlg(ulong hWndParent)
 		{
 			//throw new NotImplementedException();
 		}
@@ -85,6 +87,12 @@ namespace PluginSample
 		{
 			//throw new NotImplementedException();
 		}
+
+		public string PresetsCollectionsNames
+		{
+            get { return (""); }
+        }
+
 
 		public Guid _GUID
 		{

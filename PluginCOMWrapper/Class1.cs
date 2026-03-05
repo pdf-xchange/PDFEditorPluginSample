@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,7 +25,6 @@ namespace PluginCOMWrp
         static int _Create(uint nAPIVersion, System.IntPtr pReserved, ref IPXV_Plugin ppPlugin)
         {
             return PluginSample.MyTestPlugin.Create(nAPIVersion, pReserved, ref ppPlugin);
-
         }
 
         [DllExport("PXCE_GetPlugin", CallingConvention = CallingConvention.StdCall)]
@@ -41,8 +40,6 @@ namespace PluginCOMWrp
 
             return _Create(nAPIVersion, pReserved, ref ppPlugin);
             //int res = -2147467259;// E_FAIL;
-
-
             //create plugins
             // IPXV_Plugin pp = ppPlugin;
         }

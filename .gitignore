@@ -2,3 +2,4 @@
 **/.vs
 **/bin
 **/obj
+/packages/UnmanagedExports.1.2.7
