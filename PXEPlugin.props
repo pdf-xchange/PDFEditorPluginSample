@@ -3,16 +3,19 @@
 
   <PropertyGroup Condition="'$(Platform)' == 'x86'">
     <CommonPlatformName>Win32</CommonPlatformName>
-	  <PDFOutputDir>$(PXCE_BIN32R_PATH)</PDFOutputDir>
+      <PDFOutputDir>$(PXCE_BIN32R_PATH)</PDFOutputDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Platform)' == 'x64'">
     <CommonPlatformName>x64</CommonPlatformName>
-	  <PDFOutputDir>$(PXCE_BIN64R_PATH)</PDFOutputDir>
+      <PDFOutputDir>$(PXCE_BIN64R_PATH)</PDFOutputDir>
   </PropertyGroup>
-  
-  <PropertyGroup>
+    <PropertyGroup Condition="'$(Platform)' == 'ARM64'">
+        <CommonPlatformName>ARM64</CommonPlatformName>
+        <PDFOutputDir>$(PXCE_BINARM64R_PATH)</PDFOutputDir>
+    </PropertyGroup>
+
+    <PropertyGroup>
     <PDFRootDir>..\..</PDFRootDir>
     <OutputPath>$(PDFOutputDir)\Plugins.$(Platform)\</OutputPath>
   </PropertyGroup>
-  
 </Project>
