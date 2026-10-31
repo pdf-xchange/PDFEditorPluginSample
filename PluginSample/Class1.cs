@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace PluginSample
 {
+	[ComVisible(true)]
 	public class MyTestPlugin : IPXV_Plugin
 	{
 		IPXV_Inst m_Inst;
